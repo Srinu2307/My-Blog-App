@@ -35,7 +35,7 @@ export default function AuthPage() {
   const handleLogin = async(e) =>{
     e.preventDefault();
     try{
-          const response = await fetch('https://my-blog-app-backend-1-8j1a.onrender.com/api/auth/login',{
+          const response = await fetch("https://my-blog-app-backend-1-8j1a.onrender.com/api/auth/login",{
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({email: loginEmail, password: loginPassword}) 
