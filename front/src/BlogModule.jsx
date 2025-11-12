@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './blog.css';
 
-const API_BASE_URL = `https://my-blog-app-backend-c3it.onrender.com/api/posts`;
+const API_BASE_URL = `https://my-blog-app-backend-1-8j1a.onrender.com/api/posts`;
 
 // Header Component
 const Header = ({ onLogout }) => (
