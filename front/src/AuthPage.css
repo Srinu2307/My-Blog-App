@@ -1,0 +1,112 @@
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif !important;
+  background: linear-gradient(135deg, #071124 0%, #0b1b2b 55%, #0f172a 100%) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.auth-container {
+  display: flex;
+  gap: 50px;
+  padding: 30px;
+  max-width: 950px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form-section.authform {
+  flex: 1;
+  max-width: 380px;
+  height: 330px;
+  /* more subtle glass with cooler tint */
+  background: rgba(255, 255, 255, 0.06);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  backdrop-filter: blur(18px) saturate(140%);
+  padding: 30px 60px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 10px 35px rgba(2, 8, 20, 0.6),
+    inset 0 0 0 0.5px rgba(255, 255, 255, 0.03);
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.08) 0%,
+    rgba(255, 255, 255, 0.04) 50%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.28s ease, box-shadow 0.28s ease, background 0.28s ease;
+  position: relative;
+}
+
+.form-section.authform:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 45px rgba(173, 216, 230, 0.6);
+}
+.form-section h2 {
+  text-align: center !important;
+  margin: 0 0 25px 0;
+  font-size: 1.8rem;
+  color: #4a9cb0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+.form-section input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid rgba(180, 210, 255, 0.6);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.45);
+  color: #523e3e;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-section input:focus {
+  border-color: #7fb8ff;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 10px rgba(180, 210, 255, 0.4);
+}
+
+.form-section button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f3a9a9;
+  background: linear-gradient(to right, #7572cb, #2193b0);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(140, 200, 255, 0.35);
+}
+
+.form-section button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+  background: linear-gradient(to right, #4796aa, #6dd5ed);
+}
+
+.form-section.authform::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  pointer-events: none;
+  background: linear-gradient(135deg, rgba(173,216,230,0.2), rgba(255,255,255,0.15));
+  opacity: 0.3;
+}
